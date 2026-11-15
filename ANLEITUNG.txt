@@ -1,0 +1,64 @@
+MATHE-INSEL – INSTALLATIONSANLEITUNG (iPad / GitHub Pages)
+========================================================
+
+ENHÄLT: index.html, app.js, styles.css, manifest.webmanifest, sw.js, icon-192.png, icon-512.png
+
+1. Alle sieben Dateien in ein öffentliches GitHub-Repository hochladen,
+   zum Beispiel "mathe-insel". Wichtig: direkt ins Stammverzeichnis.
+
+2. GitHub: Repository > Settings > Pages > Build and deployment:
+   Source: "Deploy from a branch"
+   Branch: "main"
+   Folder: "/ (root)"
+   Danach auf "Save" klicken.
+
+3. Die App erscheint unter:
+   https://DEIN-GITHUB-NAME.github.io/mathe-insel/
+
+4. Auf dem iPad die Adresse in Safari öffnen, dann Teilen >
+   "Zum Home-Bildschirm" > "Hinzufügen".
+
+5. Nach dem ersten Laden über HTTPS kann die App auch offline funktionieren.
+   Die Aussprache, Bilder oder externe Inhalte werden nicht heruntergeladen:
+   Die App benötigt für die Übungen keine fremden Internetressourcen.
+
+6. Eltern-Dashboard:
+   In der App "Elternbereich" öffnen. Dort sind Aufgabenanzahlen,
+   Antwortzeiten, richtige/falsche Antworten, Themenübersicht,
+   Trainingstage und letzte Fehler sichtbar. Es gibt CSV-Export,
+   JSON-Sicherung und Sicherungs-Import.
+
+DATENSCHUTZ UND SICHERUNG
+- Alle Lern- und Nutzungsdaten verbleiben im lokalen Browser-Speicher
+  (localStorage) des betreffenden Geräts.
+- Es gibt keine Registrierung, keine Werbung und keine Telemetrie.
+- GitHub Pages synchronisiert den Lernstand NICHT mit anderen Geräten.
+- Daten regelmäßig über Elternbereich > "JSON-Sicherung" exportieren,
+  insbesondere vor Browser-Datenlöschung oder Gerätewechsel.
+- Für Zugriff auf die Auswertung von einem zweiten Gerät wäre in einer
+  späteren Version ein separates, datenschutzgerecht eingerichtetes
+  Benutzerkonto mit einer Cloud-Datenbank nötig.
+- Die "gemessene Antwortzeit" ist nicht gleichbedeutend mit gesamter
+  App-Nutzungsdauer oder tatsächlicher kognitiver Rechenzeit.
+- Die App bewertet nur Übungsleistungen und stellt keine Schulnoten aus.
+
+TÄGLICHES TRAINING
+- Start > Tagesrunde starten: 10 Aufgaben; etwa 80 % klassische
+  Kopfrechenfertigkeiten, 20 % ergänzende Themen.
+- Freies Training: 5, 10, 20 oder 30 Fragen, Themen und Stufe wählen.
+- Jedes Thema kann separat trainiert werden.
+- "Passt sich an" berücksichtigt bisherige Antworten pro Thema.
+- Die Frage wird nicht automatisch beendet: kein Zeitdruck.
+
+HINWEIS ZUM LEHRPLAN
+Orientiert an den mathematischen Bereichen des niedersächsischen
+Kerncurriculums Mathematik für die Grundschule (gültig ab 01.08.2025).
+Da das Curriculum Kompetenzen für Ende Klasse 2 und Ende Klasse 4
+formuliert, ist die Auswahl für Klasse 3 eine altersgerechte Annäherung,
+nicht der exakte Stoffplan einer bestimmten Schule.
+
+TECHNIK
+- Statische HTML/CSS/JavaScript-Web-App (PWA), keine Serverkomponente.
+- Kompatibel mit GitHub Pages und anderen statischen HTTPS-Webservern.
+- Manche iOS-Versionen verhindern das zuverlässige Starten lokaler
+  HTML-Dateien in Safari. Deshalb für das iPad GitHub Pages verwenden.
